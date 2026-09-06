@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card Design</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Top Heading */
+        .heading {
+            width: 100%;
+            background-color: #d50068;
+            color: white;
+            text-align: center;
+            padding: 18px 10px;
+        }
+
+        .heading h1 {
+            font-size: 52px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* Cards Container */
+        .cards-container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 58px auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 42px;
+        }
+
+        /* Card */
+        .card {
+            width: 33.33%;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 9px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+        }
+
+        /* Card Image */
+        .card img {
+            width: 100%;
+            height: 245px;
+            display: block;
+            object-fit: cover;
+        }
+
+        /* Card Content */
+        .card-content {
+            padding: 20px 18px 18px;
+        }
+
+        .card-content h2 {
+            font-size: 30px;
+            color: #111;
+            margin-bottom: 12px;
+        }
+
+        .card-content p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.45;
+            margin-bottom: 17px;
+        }
+
+        /* Read More Button */
+        .card-content a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #333;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .card-content a:hover {
+            background-color: #555;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+
+            .heading h1 {
+                font-size: 38px;
+            }
+
+            .cards-container {
+                width: 90%;
+                gap: 20px;
+            }
+
+            .card img {
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 700px) {
+
+            .heading h1 {
+                font-size: 30px;
+            }
+
+            .cards-container {
+                flex-direction: column;
+                width: 90%;
+            }
+
+            .card {
+                width: 100%;
+            }
+
+            .card img {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Heading -->
+    <header class="heading">
+        <h1>RESPONSIVE CARD DESIGN</h1>
+    </header>
+
+    <!-- Cards -->
+    <section class="cards-container">
+
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80"
+                 alt="Mountain">
+
+            <div class="card-content">
+                <h2>Card 1</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+
+                <a href="mamoon.html">Read More</a>
+            </div>
+        </div>
+
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=800&q=80"
+                 alt="Mountain">
+
+            <div class="card-content">
+                <h2>Card 2</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+
+                <a href="mamoon.html">Read More</a>
+            </div>
+        </div>
+
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80"
+                 alt="Mountain">
+
+            <div class="card-content">
+                <h2>Card 3</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+
+                <a href="mamoon.html">Read More</a>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+</html>

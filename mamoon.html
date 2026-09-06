@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Social Media Cards</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+
+        /* Main Container */
+        .container {
+            width: 100%;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: 50px;
+            padding: 40px;
+        }
+
+        /* Cards */
+        .card {
+            width: 395px;
+            height: 565px;
+
+            border: 2px solid #222;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            text-align: center;
+
+            padding: 55px 25px 35px;
+
+            background-color: white;
+        }
+
+        /* Middle Card */
+        .instagram {
+            background-color: #e62b6b;
+            border: 2px solid #e62b6b;
+            color: white;
+        }
+
+        /* Icons */
+        .icon {
+            font-size: 70px;
+            margin-bottom: 40px;
+        }
+
+        .instagram .icon {
+            font-size: 70px;
+            margin-bottom: 35px;
+        }
+
+        /* Heading */
+        .card h2 {
+            font-size: 38px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        /* Next Page Link */
+        .next-page {
+            color: #e62b6b;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+
+            margin-top: -10px;
+            margin-bottom: 22px;
+        }
+
+        .next-page:hover {
+            text-decoration: underline;
+        }
+
+        /* Instagram Next Page */
+        .instagram .next-page {
+            color: white;
+        }
+
+        /* Paragraph */
+        .card p {
+            font-size: 20px;
+            line-height: 1.6;
+            color: #333;
+
+            margin-bottom: 30px;
+        }
+
+        .instagram p {
+            color: white;
+        }
+
+        /* Button */
+        .read-more {
+            width: 90%;
+            height: 65px;
+
+            border-radius: 35px;
+
+            background-color: black;
+            color: white;
+
+            text-decoration: none;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 19px;
+            font-weight: bold;
+
+            margin-top: auto;
+        }
+
+        /* Middle Button */
+        .instagram .read-more {
+            background-color: white;
+            color: #e62b6b;
+        }
+
+        .read-more:hover {
+            opacity: 0.8;
+        }
+
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+
+            .container {
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .card {
+                width: 32%;
+            }
+
+        }
+
+
+        @media (max-width: 800px) {
+
+            .container {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 90%;
+                max-width: 395px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <!-- Twitter Card -->
+        <div class="card">
+
+            <div class="icon">
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+
+            <h2>TWITTER</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit.
+                Expedita ullam aliquid non
+                eligendi, nemo est neque
+                reiciendis error?
+            </p>
+
+            <a href="mama.html" class="read-more">
+                READ MORE
+            </a>
+
+        </div>
+
+
+        <!-- Instagram Card -->
+        <div class="card instagram">
+
+            <div class="icon">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+
+            <h2>INSTAGRAM</h2>
+
+            <!-- Next Page Link -->
+            <a href="nextpage.html" class="next-page">
+                NEXT PAGE
+            </a>
+
+            <p>
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit.
+                Expedita ullam aliquid non
+                eligendi, nemo est neque
+                reiciendis error?
+            </p>
+
+            <a href="mama.html" class="read-more">
+                READ MORE
+            </a>
+
+        </div>
+
+
+        <!-- YouTube Card -->
+        <div class="card">
+
+            <div class="icon">
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+
+            <h2>YOUTUBE</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit.
+                Expedita ullam aliquid non
+                eligendi, nemo est neque
+                reiciendis error?
+            </p>
+
+            <a href="mama.html" class="read-more">
+                READ MORE
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
